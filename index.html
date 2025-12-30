@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Do You Love Me?</title>
+  <style>
+    body{
+      background:black;
+      color:white;
+      text-align:center;
+      font-family:Arial, sans-serif;
+      padding-top:70px;
+    }
+    h1{
+      font-size:32px;
+      margin-bottom:35px;
+    }
+    button{
+      font-size:20px;
+      padding:14px 28px;
+      margin:10px;
+      border:none;
+      border-radius:30px;
+      cursor:pointer;
+    }
+    .yes{ background:#ff4d6d; color:white; }
+    .hmm{ background:#ffa500; color:black; }
+    .yes2{ background:#4caf50; color:white; }
+    .yeah{ background:#00bcd4; color:black; }
+
+    #result{
+      margin-top:35px;
+      font-size:24px;
+      color:#ffb6c1;
+    }
+  </style>
+</head>
+
+<body>
+
+  <h1>💖 DO YOU LOVE ME? 💖</h1>
+
+  <button class="yes" onclick="reply('HAA 😍 I LOVE YOU TOO ❤️')">HAA</button>
+  <button class="hmm" onclick="reply('HMM 🤭 Thoda socho 😜')">HMM</button>
+  <button class="yes2" onclick="reply('YES 😎 Dil se haan 💕')">YES</button>
+  <button class="yeah" onclick="reply('YEAH 🔥 Bilkul haan 😘')">YEAH</button>
+
+  <div id="result"></div>
+
+  <script>
+    function reply(msg){
+      document.getElementById("result").innerHTML = msg;
+    }
+  </script>
+
+</body>
+</html>
